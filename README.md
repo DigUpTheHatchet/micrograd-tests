@@ -13,7 +13,7 @@ For my re-implementation, I split the code up into five iterative steps:
 4. `Neuron`, `Layer` and `MLP` classes for putting together a very basic neural network (Multi-Layer Perceptron).
 5. Additional functionality required to support iteratively training our basic neural network.
 
-I've recorded the brief/instructions required to implement the code for each step here: [Implementation Steps](Implementation %20Steps.md)
+I've recorded the brief/instructions required to implement the code for each step here: [Implementation Steps](./Implementation%20Steps.md)
 
 Starting with step 1, you can follow along by creating your own re-implementation of micrograd (doing your best to avoid peeking at Andrej's code as much as possible).
 
