@@ -1,6 +1,6 @@
 # Micrograd re-implementation
 
-This repo is a learning resource to go along with [Andrej Karpathy's](https://karpathy.ai/) fantasic[youtube video](https://www.youtube.com/watch?v=VMj-3S1tku0) on [micrograd](https://github.com/karpathy/micrograd). Micrograd is a from scratch auto-grad implementation in Python.)
+This repo is a learning resource to go along with [Andrej Karpathy's](https://karpathy.ai/) fantasic [youtube video](https://www.youtube.com/watch?v=VMj-3S1tku0) on [Micrograd](https://github.com/karpathy/micrograd), which is a from scratch auto-grad implementation in Python.
 
 I was watching the 2.5 hour [video](https://www.youtube.com/watch?v=VMj-3S1tku0) and wondering what was the best way to engage with the content and make sure I was getting the most out of it. I was initially coding along as I watched the video, but I don't think this is a good way learn and retain information.
 
@@ -13,7 +13,7 @@ For my re-implementation, I split the code up into five iterative steps:
 4. `Neuron`, `Layer` and `MLP` classes for putting together a very basic neural network (Multi-Layer Perceptron).
 5. Additional functionality required to support iteratively training our basic neural network.
 
-I've recorded the brief/instructions required to implement the code for each step in the `Tests`. 
+I've recorded the brief/instructions required to implement the code for each step here: [Implementation Steps](Implementation %20Steps.md)
 
 Starting with step 1, you can follow along by creating your own re-implementation of micrograd (doing your best to avoid peeking at Andrej's code as much as possible).
 

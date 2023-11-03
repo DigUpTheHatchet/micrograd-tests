@@ -1,6 +1,6 @@
 # 0. Prereqs
 
-Please see the [Readme](README.md) for details on how to use the below material and ensure you've watched the entirety of Andrej's micrograd [walkthrough video](https://www.youtube.com/watch?v=VMj-3S1tku0) before beginning your implementation.
+Please see the [README](README.md) for details on how to use the below material and ensure you've watched the entirety of Andrej's micrograd [walkthrough video](https://www.youtube.com/watch?v=VMj-3S1tku0) before beginning your implementation.
 
 # 1. Operators
 
@@ -50,7 +50,7 @@ You will know you are finished when the test file `test_2_ backward.py` successf
 My implementation for this step is in `value2.py`
 
 # 3. Non-Linear Activation Functions
-We're now going to implement two non-linear (activation) functions: *Tanh and *Relu*
+We're now going to implement two non-linear (activation) functions: *Tanh* and *Relu*
 
 We really only need to implement one of these, but we'll implement both so we can compare them later.
 
@@ -105,22 +105,23 @@ My implementation for this step is in `mlp1.py`
 
 # 5. MLP Training
 
-We need to create three "Parameters" methods on our new classes.
-1. Implement the `parameters` method on the `Neuron` class that returns a list of the neurons weight and bias values.å
+**Parameters**
+1. Implement the `parameters` method on the `Neuron` class that returns a list of the neurons weight and bias values.
 2. Implement the `parameters` method on the `Layer` class that returns all the weights/biases of every neuron in the layer.
 3. Implement the `parameters` method on the `MLP` class that returns all the weights/biases of every layer in the mlp.
 
-Making the output layer linear:
+**Making the output layer linear**
 * We need to modify the `MLP` code so that we don't apply the *ReLU* activation function to the output of the final layer. 
 * A layer where we don't apply an activation function is referred to as a "linear" layer in frameworks like Pytorch. 
 
-Zero Grad
+**Zero Grad**
 * We need to add a `zero_grad` method to the MLP class that when called sets the gradients of all trainable parameters back to 0.
 * This will be called during each iteration of our training loop to prevent gradients from accumulating from one epoch to the next.
 
 When you are ready run the test file `test_5_mlp_training.py` which perform the above training loop over 40 epochs. The output should look something like this:
 
-[Test 5 Output](MLP_Training.png)
+Example output: 
+![Test 5 Output](MLP_Training.png)
 
 The final implementations are found in `value.py` and `mlp.py`
 
