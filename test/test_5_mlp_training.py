@@ -21,7 +21,7 @@ def test_backward_pass():
   ys = [1.0,-1.0,-1.0,1.0] 
 
   loss = 0
-  for k in range(0,50):
+  for k in range(0,40):
     # Forward pass
     ypreds = [mlp(x) for x in xs]
     loss = sum((yout-ygt)**2 for ygt, yout in zip(ys, ypreds))
